@@ -1,0 +1,146 @@
+.hamburger {
+    display: none;
+
+  @include breakpoint(tablet) {
+		  display: block;
+	}
+
+  @include breakpoint(ex-modile) {
+    top: 0;
+  }
+}
+
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   right: 0;
+   height: 1.42px;
+   width: 23.3px;
+   border-radius: 15px;
+   background-color: rgba(255, 255, 255, 0.95);
+}
+
+.hamburger {
+   	transition: all .25s;
+   	position: absolute;
+   	right: 3%;
+   	height: 36px;
+   	width: 36px;
+   	z-index: 1;
+   	cursor: pointer;
+   	top: 11px;
+   	ul {
+      	transition: all 0s;
+      	position: fixed;
+     	left: -9000px;
+   	}
+}
+
+.hamburger-icon {
+
+   @extend .b-a;
+   position: absolute;
+   right: 12px;
+   top: 46px;
+
+	&:before {
+		@extend .b-a;
+		top: -8px;
+	}
+
+	&:after {
+		@extend .b-a;
+		top: 8px;
+	}
+}
+
+.b-a-expanded {
+	transition: all .25s;
+	top: -0px;
+}
+
+.hamburger-open {
+   	transition: all .25s;
+   	text-align: center;
+   	height: 100%;
+   	width: 100%;
+   	border-radius: 0px;
+   	top: 0;
+   	right: 0;
+   	background: rgba(90, 104, 114, 0.8);
+   	opacity: 1.00;
+   	position: fixed;
+	overflow: overlay;
+
+   	& ul {
+        transition: all 0s;
+	    position: relative;
+	    left: 0;
+	    z-index: 2;
+	    top: 65px;
+	    padding-left: 60px;
+	    padding-right: 60px;
+
+        & li {
+        	display:block;
+        	text-align: left;
+         	position: relative;
+      	}
+   	}
+
+    & a {
+        transition: all .15s;
+        text-decoration: none;
+        font-size: 14px;
+      	padding: 5px;
+      	color: #fff;
+      	display: block;
+      	height: auto;
+
+      	&:hover {
+         	transition: all .15s;
+      	}
+   	}
+
+   	.header__nav-link {
+   		height: 45px;
+		box-sizing: border-box;
+		margin-right: 0;
+   	}
+
+   	.hamburger-icon {
+      	background-color: transparent;
+      	transition: all .25s;
+      	top: 48px;
+
+      	&:before {
+        	@extend .b-a-expanded;
+         	transform: rotate(45deg);
+      	}
+
+      	&:after {
+         	@extend .b-a-expanded;
+         	transform: rotate(-45deg);
+      	}
+   	}
+}
+
+.hamburger .hamburger-open ,
+.hamburger-open .listing-hamburger {
+	top: 0;
+}
+
+.hamburger.listing-hamburger {
+  top: -15px;
+}
+
+a.hamburger-logo {
+	width: 22px;
+	height: 21px;
+    margin: 0;
+}
+
+.wrapper__blur-open {
+	filter: blur(5px);
+}

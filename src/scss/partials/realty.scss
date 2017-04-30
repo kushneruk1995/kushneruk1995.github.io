@@ -1,0 +1,167 @@
+.realty {
+	max-width: 890px;
+	margin: 20px auto;
+
+	.container {
+		background: $color-secondary;
+		@include flexbox();
+		flex-flow: row-reverse wrap;
+		padding: 24px 38px 41px;
+		justify-content: flex-end;
+		box-sizing: border-box;
+
+		@include breakpoint(ex-mobile) {
+			padding: 20px 11px 19px;
+		}
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin: 21px auto 19px;
+	}
+}
+
+.realty__nav {
+	list-style-type: none;
+	margin: 0;
+	@include flexbox();
+	margin-top: 23px;
+	padding-left: 2px;
+
+	@include breakpoint(mobile) {
+		display: block;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 26px;
+	}
+}
+
+.realty__text {
+	width: 45.5%;
+	margin: 0;
+
+	@include breakpoint(tablet) {
+		width: 48.5%;
+	}
+
+	@include breakpoint(mobile) {
+		width: 100%;
+		text-align: center;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 4px;
+		margin-right: 6px;
+	}
+}
+
+.realty__nav li {
+	padding-right: 40px;
+	display: inline-block;
+
+	@include breakpoint(ex-mobile) {
+		padding-right: 32px;
+	}
+
+	&:last-child {
+		@include breakpoint(mobile) {
+			padding-right: 0;
+		}
+	}
+}
+
+.realty__title {
+	font-weight: 500;
+	font-size: 24px;
+	word-spacing: -2px;
+
+	@include breakpoint(mobile) {
+		margin-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		font-size: 20px;
+	}
+}
+
+.select {
+	width: 190px;
+
+	@include breakpoint(mobile) {
+		margin-left: 0;
+	}
+}
+
+.realty__button {	
+	display: inline-block;
+	margin-top: 29px;
+	text-align: center;
+	font-size: 14px;
+	word-spacing: 1px;
+	letter-spacing: -0.34px;	
+	width: 316px;
+	border-radius: 2px;
+	border: 2px solid transparent;
+
+	@include breakpoint(mobile) {
+		margin-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		width: 100%;
+		padding-left: 7px;
+		box-sizing: border-box;
+		margin-top: 30px;
+		max-width: 300px;
+	}
+}
+
+.realty__img {
+	@include flexbox();
+	align-items: center;
+	justify-content: center;
+
+	@include breakpoint(tablet) {
+		width: 51%;
+	}
+
+	@include breakpoint(mobile) {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	& img {
+		@include flexbox();
+
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+
+		@include breakpoint(mobile) {
+			width: initial;
+		}
+
+		@include breakpoint(ex-mobile) {
+			height: 214px;
+			width: 100%;
+		}
+	}
+}
+
+.select__location {
+	margin-top: 32px;
+	margin-left: 2px;
+	display: block;
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 32px;
+		margin-left: 0;
+	}
+
+	& .jq-selectbox  {
+		min-width: 300px;
+	}
+}

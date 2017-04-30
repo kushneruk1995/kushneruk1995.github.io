@@ -1,0 +1,40 @@
+.latest__offer-check li {
+    color: $font-color;
+    padding: 8px 0;
+    margin-right: 37px;
+    list-style: none;
+    display: inline-block;
+}
+
+.latest__offer-check li:last-child {
+    margin-right: 0;
+}
+
+.latest__offer-check {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-left: 0;
+}
+
+.latest__offer-more {
+    margin-top: 17px;
+    letter-spacing: -0.2px;
+    padding-bottom: 8px;
+
+    @include breakpoint(ex-mobile) {
+        margin-top: 8px;
+    }
+}
+
+.latest__offer-description__check {
+    margin-left: 16px;
+}
+
+.latest__offer-item-img .overflow-link {
+    top: 6%;
+}
+
+.latest__offer-wrapper {
+    margin-top: 28px;
+}

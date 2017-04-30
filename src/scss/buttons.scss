@@ -1,0 +1,56 @@
+.button-primary {
+	background: $color-primary;
+	color: $color-secondary;
+	padding: 11px 0;
+	transition: 0.5s;
+	&.disabled {
+		cursor: default;
+		background: $color-primary + #111;
+
+		&:hover {
+			cursor: default;
+			background: $color-primary + #111;
+			border: 2px solid transparent;
+		}
+	}
+
+	&:active {
+		background: darken($color-primary, 5%);
+		color: darken($color-secondary, 5%);
+	}
+
+	&:hover {
+		background: lighten($color-primary, 10%);
+		color: lighten($color-secondary, 10%);
+	}
+}
+
+.button-secondary {
+	background:  $color-secondary;
+	color: $color-primary;
+	padding: 11px 0;
+	border: none;
+	transition: 0.5s;
+
+	&.disabled {
+		background: $color-secondary + #111;
+		cursor: default;
+
+		&:hover {
+			cursor: default;
+			background: $color-secondary + #111;
+			border: 2px solid transparent;
+		}
+		
+	}
+
+	&:active {
+		background: darken($color-secondary, 5%);
+		color: darken($color-primary, 5%);
+	}
+
+	&:hover {
+		background: lighten($color-secondary, 10%);
+		color: lighten($color-primary, 10%);
+	}
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Listing</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="src/css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="dist/css/style.main.min.css">
+	<link rel="stylesheet" href="src/css/slider.css">
+	<script src="dist/script/jquery.min.js"></script>
+	<script src="dist/script/jquery.touchSwipe.min.js"></script>
+	<script src="dist/script/slider.js"></script>
+	<script src="dist/script/jquery.formstyler.js"></script>
+</head>
+
+<body>
+	<div class="wrapper__blur">
+		<header class="header listing__header">
+			<div class="container clearfix">
+				<div class="header__top">
+					<a href="#" class="logo"></a>
+					<nav class="header__nav">
+						<a class="header__nav-link" href="#">Аренда</a>
+						<a class="header__nav-link" href="#">Продажа</a>
+						<a class="header__nav-link" href="#">Посуточно</a>
+						<div class="header__nav-link overflow-link"><span></span><p>Еще</p>
+							<div class="overflow">
+								<ul class="overflow__menu">
+									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
+									<li class="overflow__menu-item"><a href="#">Restart app</a></li>
+									<li class="overflow__menu-item"><a href="#">Rename app</a></li>
+									<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+									<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="header__right">
+						<a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
+						<a class="button-log"  href="#">Войти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs">
+			        <ul class="breadcrumbs__menu">
+			            <li><a href="#">Долгосрочная аренда</a><span>/</span></li>
+			            <li><a href="#">Квартиры</a><span>/</span></li>
+			             <li><a href="#">Киев</a></li>
+			        </ul>
+			        <a href="#" class="breadcrumbs__back">Назад на главную</a>
+			    </div>
+			   <h2>Долгосрочная аренда квартир в Киеве</h2>
+				<div class="main__filters">
+					<p class="main__filters-search__result">3 варианта размещения</p>
+					<div class="main__filters-sort">
+						<select name="listing-filters-sort">
+							<option value="filters-sort-price">Сортировать</option>
+							<option value="filters-sort-price">За ценой (по возрастанию)</option>
+							<option value="filters-sort-price-more-expensive">За ценой (по убыванию)</option>
+							<option value="filters-sort-newest">Дате обновления</option>
+						</select>
+						<select name="listing-filters-sort">
+							<option value="filters-sort-price">Валюта</option>
+							<option value="filters-sort-price">За ценой (по возрастанию)</option>
+							<option value="filters-sort-price-more-expensive">За ценой (по убыванию)</option>
+							<option value="filters-sort-newest">Дате обновления</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</main>	
+		<div class="wrapper">
+			<div class="wrapper__main"> 		
+				<section class="offer__item">
+					<div class="container">
+						<div class="offer__item-content">
+							<div class="offer__item-main">
+								<div class="offer__item-img">
+									<img src="dist/img/listing-item1.jpg" alt="image-room">
+								</div>
+								<ul class="slider">
+									<li class="slides">
+										<div class="offer__item-group">
+											<div class="offer__item-description">
+												<a href="#" class="offer__item-title">2 комн., Дарницкий р-н, Пчелки 2б</a>
+												<p class="offer__item-location"><span class="metro-station metro-station-green"></span>Позняки<span class="offer__item-length">30 мин пешком</span></p>	
+
+												<h4>Особенности</h4>
+												<div class="offer__item-detailed">	
+													<span>120 кв. м.</span><span  class="offer__item-detailed__point">&#8226;</span><span>этаж 1 из 5</span>
+												</div>	
+												<p class="offer__item-text">
+													Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+												</p>
+											</div>
+										</div>
+										<div class="offer__item-price">
+											<div class="offer__item-cost">
+												<h3>11 600 грн</h3>
+												<p class="offer__item-rate">460$ <span>курс</span></p>
+											</div>
+											<div class="offer__item-contacts">
+												<div class="offer__price-rating offer__price-rating__expensive">Высокая цена</div>
+												<a href="#" class="offer__contact offer__contact-phone"></a>
+												<a href="#" class="offer__contact offer__contact-messenger"></a>
+											</div>
+										</div>
+									</li>
+									<li class="slides">
+										<div class="offer__item-group">
+											<div class="offer__item-description">
+												<a href="#" class="offer__item-title">2 комн., Дарницкий р-н, Пчелки 2б</a>
+												<p class="offer__item-location"><span class="metro-station metro-station-green"></span>Позняки<span class="offer__item-length">30 мин пешком</span></p>	
+
+												<h4>Особенности</h4>
+												<div class="offer__item-detailed">	
+													<span>120 кв. м.</span><span  class="offer__item-detailed__point">&#8226;</span><span>этаж 1 из 5</span>
+												</div>	
+												<p class="offer__item-text">
+													Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+												</p>
+											</div>
+										</div>
+										<div class="offer__item-price">
+											<div class="offer__item-cost">
+												<h3>11 600 грн</h3>
+												<p class="offer__item-rate">460$ <span>курс</span></p>
+											</div>
+											<div class="offer__item-contacts">
+												<div class="offer__price-rating offer__price-rating__expensive">Высокая цена</div>
+												<a href="#" class="offer__contact offer__contact-phone"></a>
+												<a href="#" class="offer__contact offer__contact-messenger"></a>
+											</div>
+										</div>
+									</li>
+									<li class="slides">
+										<div class="offer__item-group">
+											<div class="offer__item-description">
+												<a href="#" class="offer__item-title">2 комн., Дарницкий р-н, Пчелки 2б</a>
+												<p class="offer__item-location"><span class="metro-station metro-station-green"></span>Позняки<span class="offer__item-length">30 мин пешком</span></p>	
+
+												<h4>Особенности</h4>
+												<div class="offer__item-detailed">	
+													<span>120 кв. м.</span><span  class="offer__item-detailed__point">&#8226;</span><span>этаж 1 из 5</span>
+												</div>	
+												<p class="offer__item-text">
+													Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+												</p>
+											</div>
+										</div>
+										<div class="offer__item-price">
+											<div class="offer__item-cost">
+												<h3>14 600 грн</h3>
+												<p class="offer__item-rate">460$ <span>курс</span></p>
+											</div>
+											<div class="offer__item-contacts">
+												<div class="offer__price-rating offer__price-rating__expensive">Высокая цена</div>
+												<a href="#" class="offer__contact offer__contact-phone"></a>
+												<a href="#" class="offer__contact offer__contact-messenger"></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							<!-- <div class="offer__item-footer">
+								<div class="offer__item-nav">
+									<input type="radio" id="radio-slider-11" name="slider-1" checked="" class="slider__radio">
+				                    <label for="radio-slider-11" class="slider__radio-label"></label>
+				                    <input type="radio" id="radio-slider-12" name="slider-1" class="slider__radio"> 
+				                    <label for="radio-slider-12" class="slider__radio-label"></label>
+								</div>
+								<div class="offer__item-next-section">
+									<a href="#" class="next-section"><p>След. раздел</p><p>Инфраструктура</p></a>
+								</div>
+							</div> -->
+						</div>
+					</div>
+						<div class="offer__item-content">
+							<div class="offer__item-main">
+								<div class="offer__item-img">
+									<img src="dist/img/listing-item2.jpg" alt="image-room">
+								</div>
+								<div class="offer__item-group">
+									<div class="offer__item-description">
+										<a href="#" class="offer__item-title">2 комн., Оболонский р-н, Полярная 20</a>
+										<p class="offer__item-location"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
+
+										<h4>Особенности</h4>
+										<div class="offer__item-detailed">	
+											<span>78 кв. м.</span><span  class="offer__item-detailed__point">&#8226;</span><span>этаж 2 из 5</span>
+										</div>	
+										<p class="offer__item-text">
+											Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+										</p>
+									</div>
+								</div>
+								<div class="offer__item-price">
+									<div class="offer__item-cost">
+										<h3>10 500 грн</h3>
+										<p class="offer__item-rate">420$ <span>курс</span></p>
+									</div>
+									<div class="offer__item-contacts">
+										<div class="offer__price-rating offer__price-rating__good">Хорошая цена</div>
+										<a href="#" class="offer__contact offer__contact-phone"></a>
+										<a href="#" class="offer__contact offer__contact-messenger"></a>
+									</div>
+								</div>
+							</div>
+							<div class="offer__item-footer">
+								<div class="offer__item-nav">
+									<input type="radio" id="radio-slider-21" name="slider-2" checked="" class="slider__radio">
+				                    <label for="radio-slider-21" class="slider__radio-label"></label>
+				                    <input type="radio" id="radio-slider-22" name="slider-2" class="slider__radio"> 
+				                    <label for="radio-slider-22" class="slider__radio-label"></label>
+								</div>
+								<div class="offer__item-next-section">
+									<a href="#" class="next-section"><p>След. раздел</p><p>Инфраструктура</p></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="offer__item-content">
+							<div class="offer__item-main">
+								<div class="offer__item-img">
+									<img src="dist/img/listing-item3.jpg" alt="image-room">
+								</div>
+								<div class="offer__item-group">
+									<div class="offer__item-description">
+										<a href="#" class="offer__item-title">2 комн., Оболонский р-н, Полярная 20</a>
+										<p class="offer__item-location"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
+
+										<h4>Особенности</h4>
+										<div class="offer__item-detailed">	
+											<span>78 кв. м.</span><span  class="offer__item-detailed__point">&#8226;</span><span>этаж 2 из 5</span>
+										</div>	
+										<p class="offer__item-text">
+											Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+										</p>
+									</div>
+								</div>
+								<div class="offer__item-price">
+									<div class="offer__item-cost">
+										<h3>10 500 грн</h3>
+										<p class="offer__item-rate">420$ <span>курс</span></p>
+									</div>
+									<div class="offer__item-contacts">
+										<div class="offer__price-rating offer__price-rating__good">Хорошая цена</div>
+										<a href="#" class="offer__contact offer__contact-phone"></a>
+										<a href="#" class="offer__contact offer__contact-messenger"></a>
+									</div>
+								</div>
+							</div>
+							<div class="offer__item-footer">
+								<div class="offer__item-nav">
+									<input type="radio" id="radio-slider-31" name="slider-3" checked="" class="slider__radio">
+				                    <label for="radio-slider-31" class="slider__radio-label"></label>
+				                    <input type="radio" id="radio-slider-32" name="slider-3" class="slider__radio"> 
+				                    <label for="radio-slider-32" class="slider__radio-label"></label>
+								</div>
+								<div class="offer__item-next-section">
+									<a href="#" class="next-section"><p>След. раздел</p><p>Инфраструктура</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="wrapper__map">
+				<img src="dist/img/map.jpg" alt="">
+			</div>
+		</div>
+
+		<footer class="footer listing__footer">
+			<div class="container ">
+				<div class="footer-column">
+					<h3 class="footer__item-title">Metrovka</h3>
+					<div>	
+						<ul class="footer__nav">
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">О компании</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Пресса о нас</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Пользовательское соглашение</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Карта сайта</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Помощь</a>
+	                        </li>
+	                    </ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h3 class="footer__item-title">Партнерство</h3>
+					<div>
+						<ul class="footer__nav">
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Как разместить объявление</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Инструменты продвижения</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Правила заполнения объявлений</a>
+	                        </li>
+	                    </ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h3 class="footer__item-title">Узнайте больше</h3>
+					<div>
+						<ul class="footer__nav">
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Бонусная программа Bonus+</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Telegram Metrovka Bot</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Как работает поиск</a>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <a href="#" class="footer__nav-link">Как пользоваться избранным</a>
+	                        </li>
+	                    </ul>
+					</div>
+				</div>
+				<div class="footer__content-contacts footer-column">
+					<h3 class="footer__item-title">Контакты</h3>					
+					<div>
+						<ul class="footer__nav">
+	                        <li>
+	                        	<ul class=social-icons>
+		                            <li class=footer__social-link>
+		                                <a href="#"><i class="fa fa-facebook-official contact-icon" aria-hidden="true"></i></a>
+		                            </li>
+		                            <li class=footer__social-link>
+		                                <a href="#"><i class="fa fa-vk contact-icon" aria-hidden="true"></i></a>
+		                            </li>
+		                            <li class=footer__social-link>
+		                                <a href="#"><i class="fa fa-instagram contact-icon" aria-hidden="true"></i></a>
+		                            </li>
+		                        </ul>
+	                        </li>
+	                        <li class="footer__nav__item">
+	                            <div class="footer__nav__item-address">
+	                                ул. Жилянская, 37<br>
+	                                <small>Киев, 01033</small>
+	                            </div>
+	                        </li>
+	                        <li class="footer__nav__item footer__nav__mail">
+	                            <a class="footer__nav-link" href="mailto:info@metrovka.ua">info@metrovka.ua</a>
+	                        </li>
+	                	</ul>
+	                	<a href="#" class="footer__button button-primary"   onclick="PopUpShow(applyRequest)">Оставить заявку</a>
+	                </div>
+	            </div>			
+			</div>
+			<a href="#" class="icon-logo-grey footer__logo"></a>	
+		</footer>
+		
+		<section class="application__request" style="display: none;" id="applyRequest">
+			<div class="container-app">
+				<div class="application__close">
+					<div onclick="PopUpHide(applyRequest)" class=""><i class="fa fa-times link-cls" aria-hidden="true"></i></div>
+				</div>
+				<div class="app-left app-position"> 
+					<div class="app-left__text"> 
+						<h1 class="app-left__title">Оставить заявку</h1> 
+						<p class="app-left__content"> 
+							Нет времени искать по сайту?<br> 
+							Заполняй критерии поиска и получай<br> 
+							актуальные обновления как только они<br> 
+							появляются на Metrovka. 
+						</p> 
+					</div> 
+				</div>
+				<div class="app-right app-position">
+					<div class="application__top">
+						<div class="application__nav">
+							<a class="application__nav-item" href="#">Район</a>
+							<a class="application__nav-item" href="#">Метро</a>
+						</div>
+					</div>
+					<div class="application__form">
+						<form class="application__submit-form">
+					        <div class="district__form-select">
+					  			<select name="district">
+									<option selected="selected">Голосеевский</option>
+									<option>Соломянский</option>
+									<option>Шевченковский</option>
+									<option>Святошинский</option>
+								</select>
+					       	</div>
+					        <div class="district__form-select__room">
+					            <p>Кол-во комнат:</p>
+					            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-room-1">
+					            <label for="check-room-1" class="select-room__label">1</label>
+					            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="2" id="check-room-2">
+					            <label for="check-room-2" class="select-room__label">2</label>
+					            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="3" id="check-room-3">
+					            <label for="check-room-3" class="select-room__label">3</label>
+					            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="4" id="check-room-4">
+					            <label for="check-room-4" class="select-room__label">4</label>
+					            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="5+" id="check-room-5+">
+					            <label for="check-room-5+" class="select-room__label">5+</label>
+					        </div>
+					        <div class="input__data">
+					        	<input class="form-data" type="text" name="text" placeholder="Как вас зовут?" required="required">
+					        	<input class="form-data" type="email" name="email" placeholder="Email" required="required">
+					        </div>
+					        <div>
+					            <button class="button-secondary" type="submit">Оставить заявку</button>
+					        </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="hamburger listing-hamburger">
+		<div class="hamburger-icon"></div>
+		<div>
+			<ul>
+				<li><a href="#" class="logo hamburger-logo"></a></li>
+				<li><a href="#" class="header__nav-link">Продажа</a></li>
+				<li><a href="#" class="header__nav-link">Посуточно</a></li>
+				<li><a href="#" class="header__nav-link">Блог</a></li>
+				<li><a href="#" class="header__nav-link">Контакты</a></li>
+				<li><a href="#" class="header__nav-link">Новый поиск</a></li>
+				<li><a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
+				<li><a class="button-log"  href="#">Войти</a></li>					
+			</ul>
+		</div>
+	</div>
+
+	<script src="dist/script/main.js"></script>
+
+</body>
+</html>

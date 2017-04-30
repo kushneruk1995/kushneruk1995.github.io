@@ -1,0 +1,207 @@
+.application__request {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0,0,0,.8);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 2000000;
+}
+
+.container-app {
+	@include flexbox();	
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+
+	@include breakpoint(mobile) {
+		flex-direction: column;
+		max-width: 520px;
+	}
+}
+
+.app-left {
+	width: 75%;
+	background-color: #f5f7fa;
+	padding: 47px 20px 0 40px;
+	box-sizing: border-box;
+
+	@include breakpoint(mobile) {
+		width: 100%;
+		padding: 20px 20px 0 40px;
+	}
+	
+	&__title {
+		margin-bottom: 33px;
+		font-size: 22px;
+		font-weight: 500;
+		word-spacing: 1px;
+		letter-spacing: 0.8px;
+
+	    @include breakpoint(mobile) {
+			margin: 27px 40px;
+		}
+	}
+
+	&__content {
+		letter-spacing: -0.19px;
+		line-height: 20px;
+
+		@include breakpoint(mobile) {
+			display: none;
+		}
+	}
+}
+
+.app-right {
+	background-color: $color-secondary;
+	display: flex;
+	flex-direction: column;
+	padding: 43px 41px 70px 41px;
+
+	@include breakpoint(mobile) {
+		padding-top: 19px;
+	}
+	
+	.input__data {
+		margin-bottom: 7px;
+		margin-top: 0;
+	}
+}
+
+.application__nav {
+	@include flexbox();	
+	margin-bottom: 17px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 140px;
+
+	.application__nav-item {
+		color: $font-color;
+		text-decoration: none;
+		line-height: 20px;		
+		border-bottom: 2px solid transparent;
+		letter-spacing: -0.3px;
+		@include flexbox();
+		
+		&:hover,
+		&:active,
+		&:focus {
+			border-bottom: 2px solid $color-primary;
+			transition: 1s;
+			outline: none;
+		}
+	}
+}
+
+.application__submit-form {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.link-cls {
+	font-size: 15px;
+	display: inline-flex;
+	justify-content: flex-start;
+	color: #8C9BA5;       
+
+	&:hover {
+		color: #E71D32;
+		transition: 1s;
+		outline: none;
+	}
+}
+
+.district__form-select__room p {
+	margin-bottom: 9px;
+	font-weight: 400;
+	color: $font-color;
+	letter-spacing: -0.25px;
+}
+
+.district__form-select__room {
+	margin: 4px 0 38px;
+	position: relative;
+}
+
+.application__submit-form .district__form-select {
+	width: 258px;
+}
+
+.district__select-room {
+	opacity: 0;
+	position: absolute;
+} 
+
+input[type=checkbox]:checked.dcheckbox  + label {
+	background: $color-primary;
+	color: $font-color;
+	border: 2px solid $color-primary;
+}
+
+.dcheckbox:not(checked)+label  {
+	background: transparent;
+}
+
+.district__form-select__room .select-room__label {
+	border: 2px solid #DFE3E6;
+	color: $font-color;
+	height: 14px;
+	width: 38px;
+}
+
+.input__data input {
+	width: 320px;
+	height: 36px;
+	border: 2px solid #dfe3e6;
+	border-radius: 2px;
+	margin-bottom: 19px;
+	background-color: $color-secondary;
+	color: $font-color;
+	font-size: 14px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+
+
+.application__submit-form button {
+	padding: 10px 24px 10px 27px;
+	margin: 12px 0 70px 0;
+	display: inline-block;
+	cursor: pointer;
+	width: 320px;
+	font-size: 14px;
+	word-spacing: 2px;
+	letter-spacing: 0.1px;
+	color: $color-secondary;
+	background: $color-primary;
+	border-radius: 2px;
+	border: 2px solid transparent;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-secondary;
+		background: #50DB88;
+		border: 2px solid #50DB88;
+		transition: 1s;
+		outline: none;
+	}
+}
+
+.application__close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.application__close div:hover {
+	cursor: pointer;
+}
+
+ .application__request .jq-selectbox__dropdown  {
+	width: 344px !important;
+	top: 43px !important;
+}

@@ -1,0 +1,231 @@
+.footer {
+    width: 100%;
+
+    .container {
+        @include flexbox();
+        margin: 0 auto;
+        padding-top: 50px;
+
+        @include breakpoint(mobile) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include breakpoint(ex-mobile) {
+            padding: 66px 0 0;
+        }   
+    }
+}
+
+.footer-column {    
+    display: inline-block;
+    letter-spacing: -.25px;
+    width: 21%;
+    padding-left: 24px;
+    padding-top: 0px;
+
+    ul,
+    div {
+        padding-left: 0px;
+        width: 171px;
+        padding-top: 21px;
+
+        @include breakpoint(ex-mobile) {
+            width: auto;
+        }
+    }
+
+    ul {
+        @include breakpoint(ex-mobile) {
+            width: 100%;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        vertical-align: top;
+        text-align: left;
+        width: 32%;
+    }
+
+    @include breakpoint(ex-mobile) {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.footer__item-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $font-color;
+    margin: 0;
+}
+
+.footer__nav {
+    list-style: none;
+    margin-top: 0px;
+}
+
+.footer__nav-item {
+    line-height: 20px;
+    margin-bottom: 20px;
+    letter-spacing: -0.25px;
+    margin-left: 0;
+
+    @include breakpoint(tablet) {
+        width: 157px;
+    }
+
+    @include breakpoint(ex-mobile) {
+        width: 100%;
+    }   
+}
+
+.footer__nav-link,
+.footer__nav__item-address {
+    color: $font-color;
+    font-size: 13px;
+    font-weight: 500;        
+    margin-left: -3px;
+    letter-spacing: -0.05px;
+    word-spacing: -0.03px;
+
+    small {
+        font-size: 11px;
+        line-height: 30px;
+        letter-spacing: -0.1px;
+    }
+}
+
+.footer__nav-link {
+    @include flexbox();
+    display: flex;
+    word-spacing: .5px;
+    letter-spacing: -.31px;
+    line-height: 18px;
+    padding-bottom: 18px;
+    width: 168px;
+
+    &:hover {
+        color: $color-primary;
+        transition: 1s;
+        outline: none;
+    }
+
+    &:active {
+        color: darken($color-primary, 15%);
+    }
+
+    @include breakpoint(ex-mobile) {
+        width: 157px;
+        display: inline-block;
+        margin-right: 0;
+    }
+}
+
+.footer__content-contacts .footer__nav__item {
+    
+    @include breakpoint(ex-mobile) {
+        padding-top: 17px
+    }
+
+    div {
+        padding-top: 0;
+    }
+}
+
+.social-icons {
+    @include flexbox();
+    align-items: flex-start;
+    list-style: none;
+    margin-bottom: 14px;
+    
+    .footer__social-link {
+        margin-right: 16px;
+    }
+
+    @include breakpoint(ex-mobile) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contact-icon {
+    font-size: 20px;
+    margin-left: -2px;
+    padding-right: 2px;
+    margin-top: -1px;
+    display: inline-flex;
+    justify-content: flex-start;
+    color: $font-color; 
+    transition: 1s;
+    outline: none;      
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: darken($color-primary, 10%);
+    }
+}
+
+.footer__nav__mail {
+    margin-top: 13px;
+}
+
+.footer__logo-link {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: -62px 0px;
+    width: 51px;
+    height: 47px;
+    text-align: center;
+}
+
+.footer__button {
+    padding: 10px 25px 8px 29px;
+    margin-top: 1px;
+    margin-left: -2.3px;
+    display: inline-block;
+    font-size: 14px;
+    word-spacing: 0.05px;
+    letter-spacing: -0.25px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+
+    @include breakpoint(tablet) {
+        padding: 10px 20px 8px 25px;
+    }
+
+    @include breakpoint(ex-mobile) {
+        margin-top: 2px;
+    }
+}
+
+.footer__logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    @include breakpoint(ex-mobile) {
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+        
+        .footer__logo-link {
+            margin: 47px 0 50px 0;
+        }
+    }
+}
+
+.footer__content-contacts {
+    padding-left: 4%;
+}
+
+.footer-column:nth-child(3) .footer__nav__item:last-child {
+    @include breakpoint(ex-mobile) {
+        display: none;
+    }
+}

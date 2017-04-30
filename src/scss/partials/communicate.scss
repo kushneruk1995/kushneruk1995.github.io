@@ -1,0 +1,272 @@
+.communicate__content {
+	margin: auto;
+	@include flexbox();
+	flex-flow: column wrap;
+	padding-top: 43px;
+
+	@include breakpoint(ex-mobile) {
+		padding-top: 47px;
+	}
+}
+
+.communicate__text {
+	text-align: center;
+	margin: auto;
+	max-width: 35em;
+	@include flexbox();
+	flex-flow: column wrap;
+	align-items: center;
+
+	& p {
+		margin: auto;
+		margin-top: 3px;
+		font-size: 14px;
+		line-height: 1.5em;
+		word-spacing: -1.87px;
+		letter-spacing: -0.06px;
+
+		@include breakpoint(ex-mobile) {
+			margin-top: 6px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}		
+}
+
+.communicate__title {
+	font-weight: 500;
+	font-size: 24px;
+	word-spacing: 2px;
+	letter-spacing: -0.9px;
+
+	@include breakpoint(ex-mobile) {
+		font-size: 20px;
+	}
+}
+
+.communicate__slider-wrapper {
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 3px;
+	@include flexbox();	
+	padding-top: 30px;
+
+	@include breakpoint(ex-desktop) {
+		padding-left: 40px;
+	}
+
+	@include breakpoint(mobile) {
+		padding-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		padding-top: 0;
+	}
+}
+
+.communicate__nav {
+	margin-top: 20px;
+	margin-left: 3px;
+	@include flexbox();		
+	justify-content: space-between;
+	min-width: 70%;
+	padding-left: 0;
+
+	& li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 30px;
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
+}
+
+.communicate__nav-radio {
+	color: $font-color;	
+	display: inline-flex;
+	font-size: 14px;
+	margin-right: 8px;
+	word-spacing: 1.8px;
+	letter-spacing: -0.4px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+
+	&:first-child {
+		@include breakpoint(ex-mobile) {
+			margin-right: 28px;
+		}
+	}
+}
+
+.communicate__slider {
+	margin: 0;
+	@include flexbox();
+	flex-flow: column wrap;	
+
+	@include breakpoint(tablet) {
+		padding-left: 0;
+	}
+
+	@include breakpoint(mobile) {
+		align-items: center;
+	}
+}
+
+.communicate__slider-pagination {
+	@include flexbox();
+	margin: 34px 0 39px 0;
+}
+
+.communicate__slider-phone {
+	padding: 0;
+
+	@include breakpoint(mobile) {
+		display: none;
+	}
+}
+
+.communicate__slider-bot {
+	background: #FFFFFF;
+	@include flexbox();
+	flex-flow: column wrap;
+	max-width: 435.48px;
+	min-height: 443.55px;
+	padding: 49px 40px 0;
+	box-sizing: border-box;	
+	margin-top: -9px;
+
+	@include breakpoint(mobile) {
+		flex-flow: column;
+		padding-bottom: 29px;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 30px;
+		margin-right: 0;
+		padding-top: 29px;
+	}
+
+	@include media(320px) {
+		max-width: 320px;
+	}
+}
+
+.communicate__logo {
+	@include flexbox();
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 11px;
+
+	@include breakpoint(ex-mobile) {
+		margin-bottom: 17px;
+	}
+
+	.icon-telegram {
+		background-image: url(../img/sprite.png);
+		background-position: 0px 0px;
+		width: 62px;
+		height: 62px;
+	}
+
+	.communicate__logo-title {
+		@include flexbox();
+		margin-left: 20px;
+		letter-spacing: -1px;
+
+		@include breakpoint(ex-mobile) {
+			font-size: 24px;
+		}
+	}
+}	
+
+.communicate__list {
+	margin: 0;
+	margin-right: 4%;
+	list-style-position: inside;
+	@include flexbox();
+	flex-direction: column;
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 5px;
+	}
+	
+	ol {
+		font-family: 'Open Sans',sans-serif;
+		line-height: 21px;
+		max-width: 28.3em;
+		letter-spacing: -0.4px;
+		word-spacing: 0px;
+		margin-top: 3px;
+		padding-left: 3px;
+
+		li {
+			margin-bottom: 11px;
+
+			&:last-child {
+				@include breakpoint(ex-mobile) {
+					margin-bottom: 0;
+				}
+			}
+
+			@include breakpoint(ex-mobile) {
+				margin-bottom: 20px;
+			}
+
+		}
+	}	
+}
+
+.communicate__slider-follow {
+	margin-top: 4px;
+
+	@include breakpoint(mobile) {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	& .communicate__link {
+		@include breakpoint(mobile) {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}
+
+a.communicate__link {
+	@include flexbox();
+	justify-content: center;
+	padding-left: 2px;
+	font-size: 14px;
+	word-spacing: 0.9px;
+	letter-spacing: -0.29px;
+	width: 315px;
+	border-radius: 2px;
+	border: 2px solid transparent;
+
+	@include breakpoint(tablet) {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	@include breakpoint(mobile) {
+		align-items: center;
+	}
+
+	@include breakpoint(ex-mobile) {
+		width: 273px;
+		margin-top: 12px;
+	}
+}
+
+.communicate__slider-pagination {
+	@include flexbox();
+	justify-content: center;
+
+	@include breakpoint(ex-mobile) {
+		margin: 35px 0 19px 6px;
+	}
+}

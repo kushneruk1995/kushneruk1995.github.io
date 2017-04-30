@@ -1,0 +1,324 @@
+.header {
+	background: url('../img/header-bg.jpg');
+	width: 100%;
+	padding: 38px 0 37px;
+	background-size: cover;
+
+	.container {
+		@include breakpoint(ex-mobile) {
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+	}
+
+	@include breakpoint(ex-mobile) {
+		padding: 38px 0 25px;
+	}
+}
+
+.logo, 
+.header__nav-link,
+.header__nav,
+.header__top,
+.header__bottom {
+	@include flexbox();
+}
+
+.header__nav {
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}
+
+.header__top {
+	margin-bottom: 63px;
+
+	@include breakpoint(ex-mobile) {
+		margin-bottom: 52px;
+	}
+}
+
+.header__nav-link {
+	color: $color-secondary;
+	text-decoration: none;
+	line-height: 20px;
+	padding: 4px 4.5px 8px;
+	margin-right: 12.35%;
+	position: relative;
+	border-bottom: 2px solid transparent;
+	height: 20px;
+	transition: 1s;
+	outline: none;
+	@include flexbox();
+
+	&:hover {
+		border-bottom: 2px solid $color-secondary;
+	}
+
+	&:active {
+		color: darken($color-secondary, 10%);
+		border-bottom: 2px solid darken($color-secondary, 10%);
+	}
+
+	@include breakpoint(tablet) {
+		margin-right: 22px;
+	}
+}
+
+.logo {
+	background-image: url(../img/sprite.png);
+	background-position: 0px -62px;
+	width: 32px;
+	height: 31px;
+	margin-right: 4.65%;
+}
+
+.header__nav-link span {
+	background-image: url(../img/sprite.png);
+	background-position: -62px -47px;
+	width: 20px;
+	height: 4px;
+	margin-right: 10px;
+	margin-top: 8px;
+	@include flexbox();
+}
+
+.button__new-ad,
+.button-log {
+	@include flexbox();
+	color: $color-secondary;
+	padding: 11px 0;
+	text-decoration: none;
+	margin-top: -2px;
+}
+
+.button__new-ad {
+	background-color: rgba(255,255,255,.15);
+	padding: 11px 25px 11px 13px;
+	transition: 1s;
+	outline: none;
+
+	&:hover{
+		color: $color-primary;
+		background-color: $color-secondary;
+	}
+
+	&:active {
+		color: darken($color-primary, 10%);
+		background-color: darken($color-secondary,10%);
+	}
+
+	@include breakpoint(tablet) {
+		padding: 11px 25px 11px 13px;
+	}
+}
+
+.button-log  {
+	padding: 11px 8px 11px 16px;
+	transition: 1s;
+	outline: none;
+
+	&:hover {
+		color: $color-primary;
+		background-color: $color-secondary;
+	}
+
+	&:active {
+		color: darken($color-primary, 10%);
+		background-color: darken($color-secondary,10%);
+	}
+}
+
+.header__right {
+	@include flexbox();
+	margin-left: auto;
+
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}
+
+.fa-plus-circle {
+	font-size: 1.35em;
+	margin-right: 13px;
+}
+
+.header__title {
+	font-size: 30px;
+	color: $color-secondary;
+	font-weight: 400;
+
+	@include breakpoint(ex-mobile) {
+		font-size: 24px;
+		line-height: 38.92px;
+		letter-spacing: -0.75px;
+		width: 250px;
+	}
+}
+
+.header__bottom {
+	display: inline-flex;
+	margin-top: 20px;
+
+	@include breakpoint(tablet) {
+		display: block;
+		text-align: left;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 35px;
+		text-align: left;
+	}
+}
+
+.search-form {
+	display: inline-flex;
+	align-items: flex-end;
+
+	@include breakpoint(tablet) {
+		display: block;
+		text-align: left;
+	}
+
+	@include breakpoint(ex-mobile) {
+		text-align: left;
+	}
+}
+
+.search__form-select {
+	@include breakpoint(tablet) {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+.search__form-select p,
+.search__form-select__room p {
+	margin: 0;
+	font-weight: 400;
+	color: $color-secondary;
+	letter-spacing: -0.25px;
+	margin-bottom: 9px;
+
+	@include breakpoint(ex-mobile) {
+		margin-left: 0;
+	}
+}
+
+.search__form-select__room {
+	margin-left: 38px;
+
+	@include breakpoint(tablet) {
+		display: inline-block;
+		text-align: left;
+		margin-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 30px;
+	}
+}
+
+.search__form-select__room p {
+	margin-bottom: 6px;
+	margin-left: 4px;
+}
+
+.select-room__label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding: 12px 0;
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid $color-secondary;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.search__form-select__room {
+	position: relative;
+}
+
+.select__room-checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.select-room__label  {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding: 12px 0;
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid $color-secondary;
+	text-align: center;
+	color: $color-secondary;
+}
+
+.checkbox:not(checked)+label  {
+	background: transparent;
+}
+
+input[type=checkbox]:checked + label {
+	 background: $color-secondary;
+	 color: #152935;
+}
+
+.search__form-button {
+	margin-bottom: 2px;
+	margin-left: 48px;
+
+	@include breakpoint(tablet) {
+		text-align: right;
+		margin-right: 55px;
+		margin-left: 0;
+		margin-top: 15px;
+		display: inline-block;
+	}
+
+	@include breakpoint(mobile) {
+		text-align: center;
+	}
+
+	@include breakpoint(ex-mobile) {
+		text-align: left;
+		margin-top: 31px;
+	}
+
+	input {
+		background: $color-secondary;
+		color: $color-primary;
+		padding: 13px 52px 13px 26px;
+		line-height: 13px;
+		display: block;
+
+		&:hover {
+			background: lighten($color-secondary,15%);
+			color: lighten($color-primary,15%);
+		}
+
+		&:active {
+			background: darken($color-secondary,15%);
+			color: darken($color-primary,15%);
+		}
+
+		@include breakpoint(tablet) {
+			margin-left: 0;
+		}
+
+		@include breakpoint(ex-mobile) {
+			display: inline-block;
+		}
+	}
+}
+
+.jq-selectbox,
+.js-select .jq-selectbox {
+	@include breakpoint(ex-mobile) {
+		min-width: 300px;
+		margin-left: 0;
+	}
+}
+

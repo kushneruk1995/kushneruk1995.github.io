@@ -1,0 +1,36 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: $font-size-base;
+	color: $font-color;
+	background: rgba(90, 104, 114, 0.08);
+}
+
+.container {
+	max-width: 890px;
+	margin: 0 auto;
+
+	@include breakpoint(tablet) {
+		max-width: 768px;
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+	@include breakpoint(mobile) {
+		max-width: 520px;
+	}
+
+	@include breakpoint(ex-mobile) {
+		padding-right: 0;
+		padding-left: 0;
+		box-sizing: border-box;
+	}
+}
+
+a {	
+	text-decoration: none;
+}
+
+.overflow__body {
+	overflow: hidden;
+}

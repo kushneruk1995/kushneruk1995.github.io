@@ -1,0 +1,83 @@
+.overflow-link p {
+	margin: 0;
+}
+.overflow__menu-item {
+	list-style: none;
+	width: 170px;
+	&:hover,
+	&:active,
+	&:focus {
+		background: $color-primary;
+		cursor: pointer;
+		transition: 1s;
+		
+		& a {
+			color: #fff;
+		}
+	}
+	& a {
+		color: $font-color;
+		display: block;
+		padding: 7.5px 16px;
+		box-sizing: border-box;
+	}
+}
+
+.overflow__menu-delete {
+	border-bottom: 2px solid #D8D8D8;
+	border-top: 2px solid #D8D8D8;
+}
+
+.overflow__menu-delete:hover,
+.overflow__menu-delete:active,
+.overflow__menu-delete:focus {
+	background: #E71D32;
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+	transition: 1s;
+}
+
+.overflow__menu {
+	background: $color-secondary;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #DFE3E6;
+	font-size: 14px;
+	line-height: 17.088px;
+	color: #152935;
+	display: inline-block;
+	padding-left: 0;
+	margin: 0;
+}
+
+.overflow:before {
+		content: " ";
+		border-style: solid;
+		content: " ";
+		position: absolute;
+		border-style: solid;
+		display: block;
+		border-width: 0 8px 8px;
+		border-color: transparent transparent #fff;
+		top: -7px;
+		left: 18px;
+}
+
+.overflow {
+	position: absolute;
+	display: none;
+	left: -11px;
+	z-index: 10;
+	top: 27px;
+	text-align: left;
+}
+
+.overflow-link:hover  .overflow,
+.overflow-link:active  .overflow,
+.overflow-link:focus  .overflow {
+	display: block;
+	transition: 0.5s;
+}
+
+.latest__offer-item .overflow {
+	left: -23px;
+}

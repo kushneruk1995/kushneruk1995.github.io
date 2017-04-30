@@ -1,0 +1,27 @@
+input.radio-nav {
+    visibility: hidden;
+    display: none;
+
+    label {
+        border-bottom: 2px solid transparent;
+    }
+}
+
+.radio-nav + label {
+    &:hover {
+        border-bottom: 2px solid lighten($color-primary,15%);
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+
+    &:active {
+        border-bottom: 2px solid darken($color-primary,15%);
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+}
+
+.radio-nav:checked+label {
+    border-bottom: 2px solid #30ae63;
+    padding-bottom: 5px;
+}

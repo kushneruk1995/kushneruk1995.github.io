@@ -1,0 +1,163 @@
+.blog .container {
+	background: $color-secondary;
+
+	@include breakpoint(ex-mobile) {
+		padding-top: 7px;
+	}
+}
+
+.blog__item {
+	width: 31.56%;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+
+	@include breakpoint(mobile) {
+		width: 320px;
+		margin: 0 auto;
+		box-shadow: 0 1px 2px rgba(0,0,0,.1);
+		border: 2px solid #dfe3e6;
+		border-radius: 2px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+
+	& img {
+		margin-bottom: 18px;
+
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+
+		@include breakpoint(ex-mobile) {
+			width: 100%;
+			height: 195px;
+			margin-bottom: 0;
+		}
+
+	}
+}
+
+.blog-item:first-child {
+	margin-left: 7px;
+}
+
+.blog h2 {
+	letter-spacing: -0.8px;
+	word-spacing: 2.5px;
+
+	@include breakpoint(ex-mobile) {
+		font-size: 20px;
+	}
+}
+
+.blog__subtitle {
+	max-width: 446px;
+	letter-spacing: -0.2px;
+	line-height: 20px;
+	margin: 0 auto;
+	margin-top: 24px;
+
+	@include breakpoint(ex-mobile) {
+		max-width: 284px;
+		margin: 25px auto 0;
+	}
+}
+
+.blog a {
+	display: block;
+	text-align: left;
+
+	@include breakpoint(ex-mobile) {
+		margin-left: 19px;
+	}
+}
+
+.blog__wrapper {
+	margin-top: 21px;
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 18px;
+	}
+}
+
+.blog__item-category {
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+
+	@include breakpoint(ex-mobile) {
+		margin: 14px 3px 0;
+	}
+}
+
+.blog__item-title {
+	font-size: 16px;
+	font-weight: 400;
+	color: $font-color;
+	margin: 7px 0 10px;
+	line-height: 23px;
+	letter-spacing: -0.25px;
+
+	&:hover {
+		color: $color-primary;
+		transition: 1s;
+	}
+
+	&:active {
+		color: darken($color-primary,5%);
+		transition: 1s;
+	}
+
+	@include breakpoint(ex-mobile) {
+		width: 280px;
+		box-sizing: border-box;
+	}
+}
+
+.blog a.blog-more {
+	text-align: center;
+
+	@include breakpoint(ex-mobile) {
+		margin-left: 0;
+		margin-top: -2px;
+	}
+}
+
+.category-lifehack {
+	color: #ba8ff7;
+}
+
+.category-advice {
+	color: #30ae63;
+}
+
+.category-technologies {
+	color: #2573d8;
+}
+
+.blog__item-info p {
+	color: #8c9ba5;
+	font-size: 12px;
+	display: inline-block;
+	letter-spacing: -0.25px;
+
+	&:first-child {
+
+		&:after {
+			content:"\2022";
+			color: #8c9ba5;
+			display: inline-block;
+			margin-left: 3px;
+		}
+
+		@include breakpoint(ex-mobile) {
+			margin-left: 19px;
+		}
+	}
+}
+
+.blog-more {
+	margin-top: 30px;
+	letter-spacing: -0.25px;
+}

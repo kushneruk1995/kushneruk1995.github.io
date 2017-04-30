@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-checkmark {
+  background-image: url(sprite.png);
+  background-position: -32px -62px;
+  width: 16px;
+  height: 16px;
+}
+.icon-logo-grey {
+  background-image: url(sprite.png);
+  background-position: -62px 0px;
+  width: 51px;
+  height: 47px;
+}
+.icon-logo-white {
+  background-image: url(sprite.png);
+  background-position: 0px -62px;
+  width: 32px;
+  height: 31px;
+}
+.icon-more-icon – transfrom {
+  background-image: url(sprite.png);
+  background-position: 0px -93px;
+  width: 4px;
+  height: 20px;
+}
+.icon-more-icon {
+  background-image: url(sprite.png);
+  background-position: -62px -47px;
+  width: 20px;
+  height: 4px;
+}
+.icon-plus {
+  background-image: url(sprite.png);
+  background-position: -48px -62px;
+  width: 16px;
+  height: 16px;
+}
+.icon-select-arrow {
+  background-image: url(sprite.png);
+  background-position: -62px -51px;
+  width: 10px;
+  height: 5px;
+}
+.icon-telegram {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 62px;
+  height: 62px;
+}
